@@ -6,14 +6,14 @@ def main():
     A minimal, read-only script to fetch public submission metadata 
     for personal structural trend analysis and text parsing.
     
-    This script performs strictly GET operations and handles no user authentication
-    beyond the standard application credentials.
+    This script performs only GET operations and handles no user authentication
+    beyond the standard app credentials.
     """
     # Initialize the Reddit instance
     # Credentials can be loaded securely via environment variables or a praw.ini file
     reddit = praw.Reddit(
-        client_id=os.environ.get("REDDIT_CLIENT_ID", "YOUR_CLIENT_ID_PLACEHOLDER"),
-        client_secret=os.environ.get("REDDIT_CLIENT_SECRET", "YOUR_CLIENT_SECRET_PLACEHOLDER"),
+        client_id=os.environ.get("REDDIT_CLIENT_ID", "YOUR_CLIENT_ID"),
+        client_secret=os.environ.get("REDDIT_CLIENT_SECRET", "YOUR_CLIENT_SECRET"),
         user_agent=os.environ.get("REDDIT_USER_AGENT", "script:local_data_pipeline:v1.0 (by /u/YOUR_REDDIT_USERNAME)")
     )
 
