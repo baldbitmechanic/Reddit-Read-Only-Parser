@@ -3,8 +3,8 @@ import praw
 
 def main():
     """
-    A minimal, read-only script to fetch public submission metadata 
-    for personal structural trend analysis and text parsing.
+    A minima read-only script to fetch public sub reddit metadata 
+    for personal offline text parsing and trend analysis.
     
     This script performs only GET operations and handles no user authentication
     beyond the standard app credentials.
